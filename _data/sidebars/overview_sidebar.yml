@@ -1,0 +1,177 @@
+entries:
+- title: National Pathology
+  product: Your Project Here
+  version: 0.0.1-Alpha
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+    - title: The Journey
+      url: /overview_the_journey.html
+      output: web
+    - title: Guide Versioning
+      url: /overview_guide_versioning.html
+      output: web
+    - title: Release Notes
+      url: /overview_release_notes.html
+      output: web
+#    - title: Glossary
+#      url: /overview_glossary.html
+#      output: web
+
+  - title: Messaging Architecture
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore.html
+      output: web
+      type: homepage
+    - title: New Item 1
+      url: /explore_bundle_structure.html
+      output: web
+    - title: New Item 2
+      url: /explore_event_header_design.html
+      output: web
+    - title: New Item 3
+      url: /explore_event_publish_receive.html
+      output: web
+    - title: CareConnect FHIR Profiles 
+      url: /explore_careconnect.html
+      output: web
+    - title: FHIR Profiles
+      url: /explore_fhir_profiles.html
+      output: web
+      subfolders:
+      - title: Work Flow
+        url: /workflow.html
+        output: web
+        subfolderitems:
+        - title: Overview
+          url: /explore_workflow_overview.html
+          output: web
+        - title: Encounter
+          url: /workflow_encounter.html
+          output: web
+  - title: Message Headings
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore.html
+      output: web
+      type: homepage
+      subfolders:
+      - title: A - B
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: A
+          url: /explore_a.html
+          output: web
+      - title: C - E
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: C
+          url: /explore_c.html
+          output: web
+      - title: F - L
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: F
+          url: /explore_f.html
+          output: web
+      - title: M - O
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: M
+          url: /explore_m.html
+          output: web
+      - title: P - Q
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: P
+          url: /explore_p.html
+          output: web
+      - title: R - Z
+#        url: /explore.html
+        output: web
+        subfolderitems:
+        - title: R
+          url: /explore_r.html
+          output: web
+     
+  - title: Design & Build
+    output: web
+    folderitems:
+    - title: Overview
+      url: /design.html
+      output: web
+#    - title: Patterns / Topology
+#      url: /test_patterns.html
+#      output: web
+#    - title: Access
+#      url: /test_access.html
+#      output: web
+#    - title: Security
+#      url: /test_security.html
+#      output: web
+#    - title: Test Data
+#      url: /test_data.html
+#      output: web
+
+  - title: Assure
+    output: web
+    folderitems:
+    - title: Overview
+      url: /assure.html
+      output: web
+#    - title: Access
+#      url: /assure_access.html
+#      output: web
+#    - title: Security
+#      url: /assure_security.html
+#      output: web
+#    - title: End To End
+#      url: /assure_end_to_end.html
+#      output: web
+
+  - title: Deploy
+    output: web
+    folderitems:
+    - title: Overview
+      url: /deploy.html
+      output: web
+#    - title: Access
+#      url: /deploy_access.html
+#      output: web
+#    - title: Security
+#      url: /deploy_security.html
+#      output: web
+
+  - title: Help & Support
+    output: web
+    folderitems:
+    - title: Communication Channels
+      url: /support_communications.html
+      output: web
+      subfolders:
+      - title: Where Else Can I Look?
+        output: web
+        subfolderitems:
+        - title: Community
+          url: /support_community.html
+          output: web
+        - title: FHIR Tools
+          url: /support_fhirtools.html
+          output: web
+
+
