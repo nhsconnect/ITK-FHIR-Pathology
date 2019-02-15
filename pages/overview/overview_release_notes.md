@@ -4,14 +4,12 @@ keywords: development, versioning
 tags: [development]
 sidebar: overview_sidebar
 permalink: overview_release_notes.html
-summary: Summary release notes of the versions released in your project here Implementation Guide
+summary: Summary release notes of the versions released in FHIR National Pathology Implementation Guide
 ---
 
-{% include warning.html content="This **temporary** site is provided to assist with the development of the **Alpha** Your Project Here Specification and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
+{% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the FHIR National Pathology. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
   
-## Alpha (draft) ##
-This draft version includes implementation guidance to support the development of the your project here specification in preparation for a Beta release, supporting the following:
+## 0.0.1-alpha ##
 
-- FHIR profiles developed using the [FHIR Release STU3](https://www.hl7.org/fhir/STU3/index.html) specification
-- [SNOMED CT](https://digital.nhs.uk/snomed-ct) coding support where applicable
+Project initialization

@@ -2,10 +2,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Your Project Here (YPH) | FHIR&reg;
+topnav_title: National Pathology | FHIR&reg;
 # this appears on the top navigation bar next to the home button
 
-site_title: Your Project Here (YPH)
+site_title: National Pathology
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
@@ -96,7 +96,7 @@ sidebars:
 - appointments_sidebar
 - tasks_sidebar
 
-description: "Description of your project goes in here"
+description: "FHIR National Pathology Messaging Specification"
 # the description is used in the feed.xml file
 
 sitemap: true
@@ -104,7 +104,7 @@ sitemap: true
 # needed for sitemap.xml file only
 url: https://dxh73.github.io/IG-Template-Message
 
-repository: dxh73/Digital-Maternity
+repository: nhsconnect/ITK-FHIR-Pathology
 
 gist:
   noscript: false
