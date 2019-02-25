@@ -63,10 +63,10 @@ entries:
       url: /explore_test_group_observation.html
       output: web
     - title: Test Result
-      url: /explore_test_observation.html
+      url: /explore_test_result_observation.html
       output: web
     - title: Test Report Filing
-      url: /explore_filing_observation.html
+      url: /explore_test_filing_observation.html
       output: web  
     - title: Specimen
       url: /explore_specimen.html
