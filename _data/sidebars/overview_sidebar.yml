@@ -1,7 +1,7 @@
 entries:
 - title: National Pathology
   product: National Pathology
-  version: 0.0.1-Alpha
+  version: 1.0.0-experimental
   levels: one
   folders:
 
