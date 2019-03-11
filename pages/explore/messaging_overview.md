@@ -11,3 +11,4 @@ summary: "Overview of the Messaging Architecture section"
 
 **Message Patterns and Message Structure**
 
+{% include custom/bundle_diagram.svg %}

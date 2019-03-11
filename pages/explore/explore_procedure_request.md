@@ -7,7 +7,12 @@ permalink: explore_procedure_request.html
 summary: "National Pathology FHIR Message Profiles"
 ---
 
-## Test Request Summary for a Haemotology or Chemical Biology Test ##
+## Test Request Summary Overview for a Haemotology or Chemical Biology Test ##
+
+Information from the original request that is returned with the test report.
+This has two purposes. 
+- 1) To assist in linking the report to the original request; 
+- 2) Give context to the test report where the receiving HCP is different to the requesting HCP and does not have access to the original request.
 
 ## Mapping for Procedure Request ##
 
@@ -25,7 +30,7 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - - value | 1..1 | Mandatory | String | The value that is unique<br/><font color="red">MUST contain a UUID</font> |
 |  - status | 1..1 | Mandatory | Code | draft : active : suspended : completed : entered-in-error : cancelled<br/>Binding (required): The status of a procedure or diagnostic order. [RequestStatus](http://hl7.org/fhir/stu3/valueset-request-status.html)<br/><font color="red">MUST contain the value 'active'.</font> |
 |  - intent | 1..1 | Mandatory | Code | proposal : plan : order +<br/>Binding (required): The kind of procedure or diagnostic request [RequestIntent](http://hl7.org/fhir/stu3/valueset-request-intent.html)<br/><font color="red">MUST contain the value 'order'.</font> |
-|  - code | 1..1 | Mandatory | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes identifying names of simple observations. |
+|  - code | 1..1 | Mandatory | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes identifying names of simple observations. <font color="Red">The tests requested by the requesting HCP.</font>|
 |  - - coding | 0..* | Optional | Coding | Code defined by a terminology system |
 |  - - - system | 0..1 | Optional | Uri | Identity of the terminology system |
 |  - - - code | 0..1 | Optional | Code | Symbol in syntax defined by the system |
@@ -48,6 +53,6 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - - - code | 1..1 | Mandatory | Code | Symbol in syntax defined by the system |
 |  - - - display | 1..1 | Mandatory | String | Representation defined by the system |
 |  - - text | 0..1 | Optional | String | Plain text representation of the concept<br/><font color="red">A human readable explanation from the requesting HCP containing an explanation on why the test has been requested and any contextual information they considered relevant.</font> |
-|  - reasonReference | 0..* | Required | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Explanation/Justification for test<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
+|  - reasonReference | 0..* | Required | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Explanation/Justification for test<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided. <font color="Red">The clinical code of conditions the patient has that are supplied by the requesting HCP due to their relevance to the test request.</font> |
 |   |  | Required | [CareConnect-Condition-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1 "CareConnect-Condition-1") | <font color="red">This MUST be to the Organization resource profiled as CareConnect-Condition-1</font> |
 |  - - reference | 0..1 | Required | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |

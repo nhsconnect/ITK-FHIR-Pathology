@@ -65,9 +65,9 @@ entries:
     - title: Test Result
       url: /explore_test_result_observation.html
       output: web
-    - title: Test Report Filing
-      url: /explore_test_filing_observation.html
-      output: web  
+ #   - title: Test Report Filing
+ #     url: /explore_test_filing_observation.html
+ #     output: web  
     - title: Specimen
       url: /explore_specimen.html
       output: web

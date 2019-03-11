@@ -7,7 +7,12 @@ permalink: explore_procedure_request_all.html
 summary: "National Pathology FHIR Message Profiles"
 ---
 
-## The Test Request Summary for a Haemotology or Chemical Biology Test ##
+## Test Request Summary Overview for a Haemotology or Chemical Biology Test ##
+
+Information from the original request that is returned with the test report.
+This has two purposes. 
+- 1.) To assist in linking the report to the original request; 
+- 2.) Give context to the test report where the receiving HCP is different to the requesting HCP and does not have access to the original request.
 
 ## Mapping for Procedure Request ##
 
