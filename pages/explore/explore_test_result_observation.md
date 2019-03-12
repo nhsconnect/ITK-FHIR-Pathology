@@ -51,23 +51,11 @@ How to populate the Observation instance to conform to the profiles below:
 |   |  | Required | [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1 "CareConnect-Organization-1") | <font color='red'>his MUST be to the Organization resource profiled as CareConnect-Organization-1 </font> |
 |   |  | Required | [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 "CareConnect-Practitioner-1") | <font color='red'>his MUST be to the Practitioner resource profiled as CareConnect-Practitioner-1 </font> |
 |  - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Organization or Practitioner resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
-|  - value[x] | 0..1 | Required | [Quantity ( CareConnect-ApproximateQuantity-1 )](http://hl7.org/fhir/stu3/datatypes.html#quantity "Quantity ( CareConnect-ApproximateQuantity-1 )") | Actual result<br/>Constraint (qty-3): If a code for the unit is present, the system SHALL also be present<br/><font color="red">Quantity supports the ability to indicate if the value presented in an approximate value through the use of a boolean indicator</font> |
-|  - - value.quantity.extension (valueApproximation) | 0..1 | Optional | [Extension](http://hl7.org/fhir/stu3/extensibility.html#Extension "Extension") | Value Apprimation<br/>Constraint (ext-1): Must have either extensions or value[x], not both<br/>URL: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ValueApproximation-1 |
+|  - value[x] | 0..1 | Required | [Quantity ( CareConnect-ApproximateQuantity-1 )](http://hl7.org/fhir/stu3/datatypes.html#quantity "Quantity") | Actual result<br/>Constraint (qty-3): If a code for the unit is present, the system SHALL also be present<br/>|
 |  - - value.quantity.value | 0..1 | Mandatory | [Decimal](http://hl7.org/fhir/stu3/datatypes.html#decimal "Decimal") | Numerical value (with implicit precision) |
-|  - - value.quantity.comparator | 0..1 | Optional | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") : < : <= : >= : > - how to understand the value<br/>Binding (required): How the Quantity should be understood and represented. (http://hl7.org/fhir/stu3/valueset-quantity-comparator.html )<br/><font color="red">A comparator that may used to indicate whether the actual value is greater or less than the stated value.</font> |
+|  - - value.quantity.comparator | 0..1 | Optional | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | < : <= : >= : > - how to understand the value<br/>Binding (required): How the Quantity should be understood and represented. (http://hl7.org/fhir/stu3/valueset-quantity-comparator.html )<br/><font color="red">A comparator that may used to indicate whether the actual value is greater or less than the stated value.</font> |
 |  - - value.quantity.unit | 0..1 | Required | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Unit representation<br/><font color="red">A human readable form of the unit of measure associated with a test result value.</font> |
-|  - - value.quantity.system | 0..1 | Optional | [Uri](http://hl7.org/fhir/stu3/datatypes.html#uri "Uri") | System that defines coded unit form |
 |  - - value.quantity.code | 0..1 | Optional | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | Coded form of the unit<br/><font color="red">The UCUM code that identifies the unit of measure associated with a test result value.</font> |
-|   |  | Required | CodeableConcept |  |
-|   |  | Required | String |  |
-|   |  | Required | Boolean |  |
-|   |  | Required | [Range](http://hl7.org/fhir/stu3/datatypes.html#range "Range") |  |
-|   |  | Required | [Ratio](http://hl7.org/fhir/stu3/datatypes.html#ratio "Ratio") |  |
-|   |  | Required | [SampledData](http://hl7.org/fhir/stu3/datatypes.html#sampleddata "SampledData") |  |
-|   |  | Required | [Attachment](http://hl7.org/fhir/stu3/datatypes.html#attachment "Attachment") |  |
-|   |  | Required | [Time](http://hl7.org/fhir/stu3/datatypes.html#time "Time") |  |
-|   |  | Required | dateTime |  |
-|   |  | Required | Period |  |
 |  - dataAbsentReason | 0..1 | Required | CodeableConcept | Why the result is missing<br/>Binding (extensible): Codes specifying why the result (Observation.value[x]) is missing. [Observation Value Absent Reason](http://hl7.org/fhir/stu3/valueset-observation-valueabsentreason.html)<br/><font color="red">The reason why a test result is missing.</font> |
 |  - - coding | 0..* | Required | Coding | Code defined by a terminology system |
 |  - - - system | 0..1 | Mandatory | Uri | Identity of the terminology system |
