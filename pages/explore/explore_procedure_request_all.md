@@ -102,7 +102,7 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - - - display | 0..1 | Not Used | String | Representation defined by the system |
 |  - - - userSelected | 0..1 | Not Used | Boolean | If this coding was chosen directly by the user |
 |  - - text | 0..1 | Not Used | String | Plain text representation of the concept |
-|  - code | 1..1 | Mandatory | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes for tests/services that can be performed by procedure or diagnostic services. For laboratory, LOINC is (preferred)[http://hl7.org/fhir/STU3/terminologies.html#preferred] and a valueset using LOINC Order codes is available [here](valueset-diagnostic-requests.html). [Procedure Codes (SNOMED CT)](http://hl7.org/fhir/stu3/valueset-procedure-code.html)<br/><font color="red">Requested Tests</font> |
+|  - code | 1..1 | Required | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes for tests/services that can be performed by procedure or diagnostic services. For laboratory, LOINC is (preferred)[http://hl7.org/fhir/STU3/terminologies.html#preferred] and a valueset using LOINC Order codes is available [here](valueset-diagnostic-requests.html). [Procedure Codes (SNOMED CT)](http://hl7.org/fhir/stu3/valueset-procedure-code.html)<br/><font color="red">Requested Tests</font> |
 |  - - coding | 0..* | Optional | Coding | Code defined by a terminology system |
 |  - - - system | 1..1 | Mandatory | Uri | Identity of the terminology system |
 |  - - - version | 0..1 | Not Used | String | Version of the system - if relevant |

@@ -30,20 +30,20 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - - value | 1..1 | Mandatory | String | The value that is unique<br/><font color="red">MUST contain a UUID</font> |
 |  - status | 1..1 | Mandatory | Code | draft : active : suspended : completed : entered-in-error : cancelled<br/>Binding (required): The status of a procedure or diagnostic order. [RequestStatus](http://hl7.org/fhir/stu3/valueset-request-status.html)<br/><font color="red">MUST contain the value 'active'.</font> |
 |  - intent | 1..1 | Mandatory | Code | proposal : plan : order +<br/>Binding (required): The kind of procedure or diagnostic request [RequestIntent](http://hl7.org/fhir/stu3/valueset-request-intent.html)<br/><font color="red">MUST contain the value 'order'.</font> |
-|  - code | 1..1 | Mandatory | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes identifying names of simple observations. <font color="Red">The tests requested by the requesting HCP.</font>|
+|  - code | 1..1 | Required | CodeableConcept | What is being requested/ordered<br/>Binding (example): Codes identifying names of simple observations. <font color="Red">The tests requested by the requesting HCP.</font>|
 |  - - coding | 0..* | Optional | Coding | Code defined by a terminology system |
-|  - - - system | 0..1 | Optional | Uri | Identity of the terminology system |
-|  - - - code | 0..1 | Optional | Code | Symbol in syntax defined by the system |
-|  - - - display | 0..1 | Optional | String | Representation defined by the system |
+|  - - - system | 0..1 | Mandatory | Uri | Identity of the terminology system |
+|  - - - code | 0..1 | Mandatory | Code | Symbol in syntax defined by the system |
+|  - - - display | 0..1 | Mandatory | String | Representation defined by the system |
 |  - - text | 0..1 | Optional | String | Plain text representation of the concept |
 |  - subject | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Individual the service is ordered for<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Required | [CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1 "CareConnect-Patient-1") | <font color="red">This MUST be to the Organization resource profiled as CareConnect-Patient-1</font> |
 |  - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
-|  - requester | 1..1 | Mandatory | BackboneElement | Who/what is requesting procedure or diagnostic |
+|  - requester | 0..1 | Mandatory | BackboneElement | Who/what is requesting procedure or diagnostic |
 |  - - agent | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Individual making the request<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Mandatory | [Practitioner](http://hl7.org/fhir/stu3/StructureDefinition/Practitioner "Practitioner") | <font color="red">Requesting Healthcare Professional</font> |
 |  - - - reference | 1..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
-|  - performer | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Requested perfomer<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
+|  - performer | 0..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Requested perfomer<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Mandatory | [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 "CareConnect-Practitioner-1") | <font color="red">This MUST be to the Organization resource profiled as CareConnect-Practitioner-1</font> |
 |   |  | Mandatory | [CareConnect-Organisation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organisation-1 "CareConnect-Organisation-1") | <font color="red">This MUST be to the Organization resource profiled as CareConnect-Organisation-1</font> |
 |  - - reference | 1..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |

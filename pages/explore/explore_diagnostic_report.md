@@ -54,3 +54,8 @@ How to populate the Specimen instance to conform to the profiles below:
 |  - - - system | 1..1 | Mandatory | [Uri](http://hl7.org/fhir/stu3/datatypes.html#uri "Uri") | Identity of the terminology system<br/>Fixed Value: http://snomed.info/sct |  |  |  |  |  |  |  |
 |  - - - code | 1..1 | Mandatory | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | Symbol in syntax defined by the system |  |  |  |  |  |  |  |
 |  - - - display | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Representation defined by the system |  |  |  |  |  |  |  |
+
+## Examples ##
+
+Basic example of a Diagnostic Report
+
