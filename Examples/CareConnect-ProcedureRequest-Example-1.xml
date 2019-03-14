@@ -20,7 +20,13 @@
 	<requester>
 		<agent>
 			<reference value="urn:uuid:bf7a76d3-5b44-4194-a9e0-d1cc1ea5e50e"/>
-			<display value="Dr Ibrahim Khan"/>
+			<display value="THE BRIDGE STREET SURGERY"/>
+		</agent>
+	</requester>
+		<requester>
+		<agent>
+			<reference value="urn:uuid:f25e9d63-6a4e-4de6-b9dc-c912fda62b01"/>
+			<display value="SCOTT"/>
 		</agent>
 	</requester>
 	<performer>

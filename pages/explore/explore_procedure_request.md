@@ -56,3 +56,7 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - reasonReference | 0..* | Required | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Explanation/Justification for test<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided. <font color="Red">The clinical code of conditions the patient has that are supplied by the requesting HCP due to their relevance to the test request.</font> |
 |   |  | Required | [CareConnect-Condition-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1 "CareConnect-Condition-1") | <font color="red">This MUST be to the Organization resource profiled as CareConnect-Condition-1</font> |
 |  - - reference | 0..1 | Required | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
+
+## Test Request Summary Example ##
+
+<script src="https://gist.github.com/IOPS-DEV/992fa4b3ac83b375286e75834082602a.js"></script>

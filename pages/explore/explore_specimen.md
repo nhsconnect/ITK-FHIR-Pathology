@@ -58,3 +58,7 @@ How to populate the Specimen instance to conform to the profiles below:
 |   |  | Required | [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 "CareConnect-Practitioner-1") | <font color="red">This MUST be to the Practitioner resource profiled as CareConnect-Practitioner-1</font> |  |  |  |  |  |  |  |  |  |  |
 |  time | 0..1 | Required | [dateTime](http://hl7.org/fhir/stu3/datatypes.html#datetime "dateTime") | When the annotation was made |  |  |  |  |  |  |  |  |  |  |
 |  text | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | The annotation - text content |  |  |  |  |  |  |  |  |  |  |
+
+## Specimen Example(s) ##
+
+<script src="https://gist.github.com/IOPS-DEV/0b2c6db045751a7b17e7e03a6fab541e.js"></script>

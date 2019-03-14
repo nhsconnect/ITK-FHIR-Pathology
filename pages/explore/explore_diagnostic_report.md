@@ -59,3 +59,4 @@ How to populate the Specimen instance to conform to the profiles below:
 
 Basic example of a Diagnostic Report
 
+<script src="https://gist.github.com/IOPS-DEV/586043065c329e6c62af036bed1b73d5.js"></script>

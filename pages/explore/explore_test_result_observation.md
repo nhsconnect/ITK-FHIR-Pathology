@@ -47,11 +47,12 @@ How to populate the Observation instance to conform to the profiles below:
 |  - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
 |  - effective[x] | 0..1 | Required | dateTime | Clinically relevant time/time-period for observation<br/><font color="red">The date and time on which the test was performed.</font> |
 |  - issued | 0..1 | Required | Instant | Date/Time this was made available<br/><font color="red">Test Result Issued Date and Time</font> |
-|  - performer | 0..* | Required | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Who is responsible for the observation<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
+|  - performer | 0..* | Required | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Who is responsible for the observation<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided. <font color="red">Reference to the person and/or organisation that authored the test report.</font> |
 |   |  | Required | [CareConnect-Organization-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1 "CareConnect-Organization-1") | <font color='red'>his MUST be to the Organization resource profiled as CareConnect-Organization-1 </font> |
 |   |  | Required | [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 "CareConnect-Practitioner-1") | <font color='red'>his MUST be to the Practitioner resource profiled as CareConnect-Practitioner-1 </font> |
 |  - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Organization or Practitioner resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
 |  - value[x] | 0..1 | Required | [Quantity ( CareConnect-ApproximateQuantity-1 )](http://hl7.org/fhir/stu3/datatypes.html#quantity "Quantity") | Actual result<br/>Constraint (qty-3): If a code for the unit is present, the system SHALL also be present<br/>|
+|  - - extension (valueApproximation)|	0..1|	Required	|Extension	|"Value Approximation Constraint (ext-1): Must have either extensions or value[x], not both URL: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ValueApproximation-1"|
 |  - - value.quantity.value | 0..1 | Mandatory | [Decimal](http://hl7.org/fhir/stu3/datatypes.html#decimal "Decimal") | Numerical value (with implicit precision) |
 |  - - value.quantity.comparator | 0..1 | Optional | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | < : <= : >= : > - how to understand the value<br/>Binding (required): How the Quantity should be understood and represented. (http://hl7.org/fhir/stu3/valueset-quantity-comparator.html )<br/><font color="red">A comparator that may used to indicate whether the actual value is greater or less than the stated value.</font> |
 |  - - value.quantity.unit | 0..1 | Required | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Unit representation<br/><font color="red">A human readable form of the unit of measure associated with a test result value.</font> |
@@ -104,3 +105,7 @@ How to populate the Observation instance to conform to the profiles below:
 |  - - target | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Resource that is related to this one<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Mandatory | [CareConnect-Observation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1 "CareConnect-Observation-1") |  |
 |  - - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL<br/><font color="red">a reference to the Observtionresource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font><br/> |
+
+## Test (Single) Result Example(s) ##
+
+<script src="https://gist.github.com/IOPS-DEV/bdac374abdb996d0527e9cb44b2a0b33.js"></script>
