@@ -63,7 +63,7 @@ How to populate the Observation instance to conform to the profiles below:
 |  - - - code | 0..1 | Mandatory | Code | Symbol in syntax defined by the system |
 |  - - - display | 0..1 | Mandatory | String | Representation defined by the system |
 |  - - text | 0..1 | Optional | String | Plain text representation of the concept |
-|  - interpretation | 0..1 | Required | CodeableConcept | High, low, normal, etc.<br/>Binding (extensible): Codes identifying interpretations of observations. [Observation Interpretation Codes](http://hl7.org/fhir/stu3/valueset-observation-interpretation.html)<br/><font color="red">Simple coded interpretation of the results. It is provided by the performing HCP. For example - out of range, high, low.</font> |
+|  - interpretation | 0..1 | Required | CodeableConcept | High, low, normal, etc.<br/>Binding (extensible): Codes identifying interpretations of observations. [Observation Interpretation Codes](http://hl7.org/fhir/stu3/valueset-observation-interpretation.html)<br/><font color="red">Simple coded interpretation of the results. It is provided by the performing HCP. For example - out of range, high, low.</font><font color="red">Use FHIR Value Set for standard interpretation codes and https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ExtendedInterpretationCode-1 for additional codes</font> |
 |  - - coding | 0..* | Required | Coding | Code defined by a terminology system |
 |  - - - system | 0..1 | Mandatory | Uri | Identity of the terminology system |
 |  - - - code | 0..1 | Mandatory | Code | Symbol in syntax defined by the system |

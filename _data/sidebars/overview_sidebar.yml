@@ -91,15 +91,15 @@ entries:
     - title: Specimen
       url: /explore_specimen.html
       output: web
-  - title: Design & Build
+  - title: Examples
     output: web
     folderitems:
     - title: Overview
-      url: /design.html
+      url: /bundles.html
       output: web
-#    - title: Patterns / Topology
-#      url: /test_patterns.html
-#      output: web
+    - title: Single test Example
+      url: /design_singletest_bundle.html
+      output: web
 #    - title: Access
 #      url: /test_access.html
 #      output: web
