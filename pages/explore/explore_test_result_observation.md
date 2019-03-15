@@ -39,8 +39,8 @@ How to populate the Observation instance to conform to the profiles below:
 |  - - coding (snomedCT) | 0..1 | Mandatory | Coding | Code defined by a terminology system<br/>Binding (extensible): A code from the SNOMED Clinical Terminology UK coding system describing a type of observation [CareConnect-ObservationType-1](https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ObservationType-1) |
 |  - - - extension (snomedCTDescriptionID) | 0..1 | Optional | [Extension-coding-sctdescid](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid "Extension-coding-sctdescid") | The SNOMED CT Description ID for the display.<br/>Constraint (ext-1): Must have either extensions or value[x], not both<br/> |
 |  - - - system | 1..1 | Mandatory | Uri | Identity of the terminology system<br/><font color='red'>The value attribute of the profile element MUST contain the value 'http://snomed.info/sct'</font> |
-|  - - - code | 1..1 | Mandatory | Code | Symbol in syntax defined by the system<br/><font color="red>A code that identifies the test result.</font> |
-|  - - - display | 1..1 | Mandatory | String | Representation defined by the system<br/><font color="red"?SNOMED CT display name. This will be the name of the test that took place</font> |
+|  - - - code | 1..1 | Mandatory | Code | Symbol in syntax defined by the system<br/><font color="red">A code that identifies the test result.</font> |
+|  - - - display | 1..1 | Mandatory | String | Representation defined by the system<br/><font color="red">SNOMED CT display name. This will be the name of the test that took place</font> |
 |  - - text | 0..1 | Optional | String | Plain text representation of the concept |
 |  - subject | 0..1 | Optional | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Who and/or what this is about<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Optional | [CareConnect-Patient-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1 "CareConnect-Patient-1") | <font color='red'>his MUST be to the Patient resource profiled as CareConnect-Patient-1 </font> |

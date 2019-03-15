@@ -54,22 +54,22 @@ entries:
     - title: Message Profiles
       url: /explore_message_profiles.html
       output: web
-    - title: CareConnect FHIR Profiles 
-      url: /explore_careconnect.html
-      output: web
-      subfolders:
-      - title: Work Flow
-        url: /workflow.html
-        output: web
-        subfolderitems:
-        - title: Overview
-          url: /explore_workflow_overview.html
-          output: web
+    # - title: CareConnect FHIR Profiles 
+      # url: /explore_careconnect.html
+      # output: web
+      # subfolders:
+      # - title: Work Flow
+        # url: /workflow.html
+        # output: web
+        # subfolderitems:
+        # - title: Overview
+          # url: /explore_workflow_overview.html
+          # output: web
 
   - title: Messaging
     output: web,pdf
     folderitems:
-    - title: Overview
+    - title: Section Guidance
       url: /explore.html
       output: web
       type: homepage
@@ -110,12 +110,12 @@ entries:
 #      url: /test_data.html
 #      output: web
 
-  - title: Assure
-    output: web
-    folderitems:
-    - title: Overview
-      url: /assure.html
-      output: web
+  # - title: Assure
+    # output: web
+    # folderitems:
+    # - title: Overview
+      # url: /assure.html
+      # output: web
 #    - title: Access
 #      url: /assure_access.html
 #      output: web
@@ -126,12 +126,12 @@ entries:
 #      url: /assure_end_to_end.html
 #      output: web
 
-  - title: Deploy
-    output: web
-    folderitems:
-    - title: Overview
-      url: /deploy.html
-      output: web
+  # - title: Deploy
+    # output: web
+    # folderitems:
+    # - title: Overview
+      # url: /deploy.html
+      # output: web
 #    - title: Access
 #      url: /deploy_access.html
 #      output: web
