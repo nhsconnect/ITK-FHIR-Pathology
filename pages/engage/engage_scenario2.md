@@ -57,13 +57,13 @@ The tests are performed, and the results are authorised for release. The followi
 
 - Patient: Patient: Lisa Stanner – FHIR Resource: [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Requesting HCP: Dr Jane Green – FHIR Resource:  [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
-- Specimen Collecting HCP: Alice Jones – FHIR Resource: Practitioner
+- Specimen Collecting HCP: Alice Jones – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 ## Named Organisations ##
 
 - Requesting Organisation: Manor GP Practice – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- Specimen Collecting Organisation: Manor GP Practice – FHIR Resource: Organization
-- Performing Organisation: Midtown District Hospital (Blood Sciences) – FHIR Resource:  Organization
+- Specimen Collecting Organisation: Manor GP Practice – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Performing Organisation: Midtown District Hospital (Blood Sciences) – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
 ## Condition ##
 

@@ -7,18 +7,18 @@ permalink: explore.html
 summary: "Overview of the Messaging Architecture section"
 ---
 
-{% include warning.html content="This **temporary** site is provided to assist with the development of the **Alpha** Your Project Here Specification and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
+{% include warning.html content="This **temporary** site is provided to assist with the development of the **Alpha** and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
 
 
 ## Using the message pages ##
 
 Within this message section of the implementation guide, the audience are presented with each business entity that form part of a National Pathology diagnostic test. The business entities are:
 
-- Test Request Summary - This business entity is used to capture details from the requestor and uses the CareConnect-ProcedureRequest-1 FHIR resource.
-- Test Report - This business entity is used to capture details regarding all the tests performed by the performing organisation and uses the CareConnect-DiagnosticReport-1 FHIR resource.
-- Specimen This business entity is used to capture specimen (sample) details and uses the CareConnect-Specimen-1 FHIR resource.
-- Test Group - This business entity is used to capture groups of test results. These can be battery of tests or single test, or a combination of all of these entities. Use the CareConnect-Observation-1 FHIR resource.
-- Test Result - This business entity is used to capture details for a single test result and uses the CareConnect-Observation-1.
+- Test Request Summary - This business entity is used to capture details from the requestor and uses the [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1) FHIR resource.
+- Test Report - This business entity is used to capture details regarding all the tests performed by the performing organisation and uses the [DiagnosticReport](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1) FHIR resource.
+- Specimen - This business entity is used to capture specimen (sample) details and uses the [Specimen](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1) FHIR resource.
+- Test Group - This business entity is used to capture groups of test results. These can be battery of tests or single test, or a combination of all of these entities. Use the [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1) FHIR resource.
+- Test Result - This business entity is used to capture details for a single test result and uses the [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1).
 
 
 Within each business entity message, the audience is presented with a tabular view that provides low level details on how each FHIR element is used to construct a data record to support the requirements for that business entity. The table is made up of 5 columns:

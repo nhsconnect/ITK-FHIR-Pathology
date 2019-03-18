@@ -23,13 +23,13 @@ The test is performed, and the results are authorised for release. The following
 
 - Patient: Michael Kay – FHIR Resource: [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Requesting HCP: Dr Ibrahim Khan – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
-- Specimen Collecting HCP: Juan Garcia – FHIR Resource: Practitioner
+- Specimen Collecting HCP: Juan Garcia – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 ## Named Organisations ##
 
 - Requesting Organisation: Lingfield Royal Infirmary (Oncology) – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- Specimen Collecting Organisation: Lingfield Royal Infirmary (Oncology) – FHIR Resource: Organization
-- Performing Organisation: Lingfield Royal Infirmary (Blood Sciences) – FHIR Resource: Organization
+- Specimen Collecting Organisation: Lingfield Royal Infirmary (Oncology) – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Performing Organisation: Lingfield Royal Infirmary (Blood Sciences) – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
 ## Condition ##
 

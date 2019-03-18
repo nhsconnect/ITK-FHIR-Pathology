@@ -28,24 +28,24 @@ Jane is admitted to the Special Care Baby Unit at the hospital for phototherapy.
 
 ## Named participants ##
 
-- Patient: Jane Archer – FHIR Resource:  [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
-- Requesting HCP: Sarah Smith  – FHIR Resource:  [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
-- Specimen Collecting HCP: Sarah Smith – FHIR Resource: Practitioner
+- Patient: Jane Archer – FHIR Resource: [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
+- Requesting HCP: Sarah Smith  – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
+- Specimen Collecting HCP: Sarah Smith – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 ## Named Organisations ##
 
-- Requesting Organisation: St John’s Infirmary (Maternity Service)  – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- Specimen Collecting Organisation: St John’s Infirmary (Maternity Service) – FHIR Resource: Organization
-- Performing Organisation: St John’s Infirmary (Blood Sciences) – FHIR Resource:  Organization
+- Requesting Organisation: St John’s Infirmary (Maternity Service)  – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Specimen Collecting Organisation: St John’s Infirmary (Maternity Service) – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Performing Organisation: St John’s Infirmary (Blood Sciences) – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
 ## Condition ##
 
-- Jaundice  – FHIR Resource:  [Condition](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1)
+- Jaundice  – FHIR Resource: [Condition](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1)
 
 ## Required Tests ##
 
-- Total Bilirubin – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
-- Conjugated Bilirubin  – FHIR Resource:  ProcedureRequest
+- Total Bilirubin – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Conjugated Bilirubin  – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
 
 ## Specimen(s) ##
 
@@ -58,7 +58,7 @@ Jane is admitted to the Special Care Baby Unit at the hospital for phototherapy.
 ## Test Results ##
 
 - Total Bilirubin Result - FHIR Resource: [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)
-- Conjugated Bilirubin Result - FHIR Resource: Observation
+- Conjugated Bilirubin Result - FHIR Resource: [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)
 
 
 

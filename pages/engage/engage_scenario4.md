@@ -89,21 +89,21 @@ The tests are performed, and the results are authorised for release. The followi
 
 - Patient: John Reardon  – FHIR Resource:  [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Requesting HCP: Alison Thompson   – FHIR Resource:  [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
-- Specimen Collecting HCP: Alison Thompson  – FHIR Resource: Practitioner
+- Specimen Collecting HCP: Alison Thompson  – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 ## Named Organisations ##
 
 - Requesting Organisation: Heath Park Surgery   – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- Specimen Collecting Organisation: Heath Park Surgery  – FHIR Resource: Organization
-- Performing Organisation: Greentown General Hospital (Blood Sciences)  – FHIR Resource:  Organization
+- Specimen Collecting Organisation: Heath Park Surgery  – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Performing Organisation: Greentown General Hospital (Blood Sciences)  – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
 ## Required Tests ##
 
 - Electrolytes – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
-- Liver function – FHIR Resource:  ProcedureRequest
-- Cholesterol  – FHIR Resource:  ProcedureRequest
-- Full blood count  – FHIR Resource:  ProcedureRequest
-- Glycated haemoglobin – FHIR Resource:  ProcedureRequest
+- Liver function – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Cholesterol  – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Full blood count  – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Glycated haemoglobin – FHIR Resource:  [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
 
 ## Specimen(s) ##
 
@@ -116,7 +116,3 @@ The tests are performed, and the results are authorised for release. The followi
 ## Test Results ##
 
 - FHIR Resource: [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)
-
-
-
-

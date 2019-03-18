@@ -106,13 +106,13 @@ The tests are performed, and the results are authorised for release. The followi
 
 - Patient: Patient: Susan Allen – FHIR Resource: [Patient](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Requesting HCP: Mike Black  – FHIR Resource:  [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
-- Specimen Collecting HCP: Mike Black  – FHIR Resource: Practitioner
+- Specimen Collecting HCP: Mike Black  – FHIR Resource: [Practitioner](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
 ## Named Organisations ##
 
 - Requesting Organisation: Oldhampton Royal Infirmary (Diabetes Clinic) – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
-- Specimen Collecting Organisation: Newgate GP Practice  – FHIR Resource: Organization
-- Performing Organisation: Oldhampton Royal Infirmary (Blood Sciences)  – FHIR Resource:  Organization
+- Specimen Collecting Organisation: Newgate GP Practice  – FHIR Resource: [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
+- Performing Organisation: Oldhampton Royal Infirmary (Blood Sciences)  – FHIR Resource:  [Organization](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 
 ## Condition ##
 
@@ -121,12 +121,12 @@ The tests are performed, and the results are authorised for release. The followi
 ## Required Tests ##
 
 - Glycated haemoglobin – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
-- Full blood count – FHIR Resource: ProcedureRequest
-- Electrolytes – FHIR Resource: ProcedureRequest
-- Cholesterol – FHIR Resource: ProcedureRequest
-- Triglycerides – FHIR Resource: ProcedureRequest
- -Urine albumin – FHIR Resource: ProcedureRequest
-- Urine MC&S – FHIR Resource: ProcedureRequest
+- Full blood count – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Electrolytes – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Cholesterol – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Triglycerides – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+ -Urine albumin – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
+- Urine MC&S – FHIR Resource: [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)
 
 ## Specimen(s) ##
 
@@ -139,7 +139,3 @@ The tests are performed, and the results are authorised for release. The followi
 ## Test Results ##
 
 - FHIR Resource: [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)
-
-
-
-
