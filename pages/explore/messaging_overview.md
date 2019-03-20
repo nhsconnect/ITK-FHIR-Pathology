@@ -48,7 +48,7 @@ The table provides a clear guidance to allow implementers to rapidly build a str
 
 ## Bundle Diagram ##
 
-The following diagram provides a visual indication assist implementers with understanding which resources are inlcuded within a National Pathology ITK bundle, and how these resources are related. The diagram is interactive and upon click on each resource, this will redirect the user to the specific National Pathology page which provides data item level implementation guidance.
+The following diagram provides a visual indication to assist implementers with understanding which resources are included within a National Pathology ITK bundle, and how these resources are related. The diagram is interactive and upon click on each resource, this will redirect the user to the specific National Pathology page which provides data item level implementation guidance.
 
 {% include custom/bundle_diagram.svg %}
 
