@@ -17,7 +17,7 @@ Contains data on the specimen that was provided for testing. Where a single type
 
 How to populate the Specimen instance to conform to the profiles below:
 
-|**Level 1**|[Specimen Resource](http://hl7.org/fhir/stu3/specimen.html)|**Level 2**|[CareConnect-Specimen-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1/_history/1.1)|**Level 3**|None|
+|**Level 1**|[Specimen Resource](http://hl7.org/fhir/stu3/specimen.html)|**Level 2**|[CareConnect-Specimen-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1)|**Level 3**|None|
 
 |**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_specimen_all.html#mapping-for-patient)**|
 

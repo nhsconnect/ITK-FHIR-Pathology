@@ -94,9 +94,6 @@ entries:
   - title: Examples
     output: web
     folderitems:
-    - title: Overview
-      url: /bundles.html
-      output: web
     - title: Single test Example
       url: /design_singletest_bundle.html
       output: web
