@@ -18,7 +18,7 @@ This has two purposes.
 
 How to populate the Procedure Request instance to conform to the profiles below:
 
-|**Level 1**|[Procedure Request Resource](http://hl7.org/fhir/stu3/procedurerequest.html)|**Level 2**|[CareConnect-ProcedureRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1/_history/1.1)|**Level 3**|None|
+|**Level 1**|[Procedure Request Resource](http://hl7.org/fhir/stu3/procedurerequest.html)|**Level 2**|[CareConnect-ProcedureRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)|**Level 3**|None|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | --- | --- | --- | --- | --- |
