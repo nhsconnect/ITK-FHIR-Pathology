@@ -97,9 +97,9 @@ entries:
     - title: Single test Example
       url: /design_singletest_bundle.html
       output: web
-#    - title: Access
-#      url: /test_access.html
-#      output: web
+    - title: Full Blood Count Example
+      url: /design_fbc_bundle.html
+      output: web
 #    - title: Security
 #      url: /test_security.html
 #      output: web
