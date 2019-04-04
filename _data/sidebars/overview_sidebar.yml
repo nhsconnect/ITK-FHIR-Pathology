@@ -100,9 +100,9 @@ entries:
     - title: Full Blood Count Example
       url: /design_fbc_bundle.html
       output: web
-#    - title: Security
-#      url: /test_security.html
-#      output: web
+    - title: Full Blood Count and Urine Test
+      url: /design_fbc_urine_bundle.html
+      output: web
 #    - title: Test Data
 #      url: /test_data.html
 #      output: web

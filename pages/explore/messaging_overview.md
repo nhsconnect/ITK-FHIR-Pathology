@@ -17,7 +17,7 @@ Within this message section of the implementation guide, the audience are presen
 - Test Request Summary - This business entity is used to capture details from the requestor and uses the [ProcedureRequest](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1) FHIR resource.
 - Test Report - This business entity is used to capture details regarding all the tests performed by the performing organisation and uses the [DiagnosticReport](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1) FHIR resource.
 - Specimen - This business entity is used to capture specimen (sample) details and uses the [Specimen](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1) FHIR resource.
-- Test Group - This business entity is used to capture groups of test results. These can be a battery of tests or a single test, or a combination of all of these entities. Use the [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1) FHIR resource.
+- Test Group - This business entity is used to capture groups of test results. These can be a battery of tests or a single test, or a combination of all of these entities. It uses the [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1) FHIR resource.
 - Test Result - This business entity is used to capture details for a single test result and uses the [Observation](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1).
 
 
@@ -29,7 +29,7 @@ The FHIR data element name used by HL7 FHIR
 
 **Card.**
 
-The cardinality assigned to this FHIR data element. This may differ to the FHIR base value if the resource uses is a CareConnect version.
+The cardinality assigned to this FHIR data element. This may differ to the FHIR base value if the resource uses a CareConnect version.
 
 **Business Conformance**
 
@@ -37,7 +37,7 @@ This indicates what the business has requested the value be set to. Consists of 
 
 **Type**
 
-FHIR data type used with this element. This MAY inlcuded reference to FHIR profiles.
+FHIR data type used with this element. This MAY include a reference to FHIR profiles.
 
 **Description, Constraints and Mapping for Implementation**
 

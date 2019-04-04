@@ -12,10 +12,6 @@ summary: A brief introduction to getting started with the National Pathology FHI
 
 {% include warning.html content="This **temporary** site is provided to document the development of the **alpha** National Pathology FHIR Messaging Specfication and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
 
-## Introduction ##
-
-The National Pathology FHIR Messaging Specfication aims to address the key objective of the National Pathology and Diagnostic service, in being able to share pathology results in primary and secondary care settings across the NHS landscape. The main scope of the API is to provide a FHIR STU3 payload, which contains pathology (haematology and clinical biochemistry) results transported over the [MESH](https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh) network between a Laboratory Information Management System and the requesting system.
-
 ## Scope ##
 
 The National Pathology FHIR Messaging Specification supports the ability to share pathology results in NHS primary and secondary care settings. This release focuses on haematology and clinical biochemistry (also known as chemical pathology) test reporting. It defines a FHIR STU3 payload to allow test results to be sent from a Laboratory Information Management System (LIMS) to a requesting system. It is anticipated that the messaging specification and implementation guidance will be updated following First of Type (FoT) implementation.

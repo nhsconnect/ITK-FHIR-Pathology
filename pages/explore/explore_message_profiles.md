@@ -10,9 +10,9 @@ summary: "National Pathology FHIR Message Profiles"
 
 ## National Pathology FHIR Message Bundle ##
 
-The FHIR message bundle is a collection of FHIR Resource Profiles that have been designed to support the requiements for National Pathology messaging (Haemotology and Chemical Biochemistry).
+The FHIR message bundle is a collection of FHIR Resource Profiles that have been designed to support the requirements for National Pathology messaging (Haematology or Chemical Pathology).
 
-The message bundle consits of the following FHIR Resource Profiles.
+The message bundle consists of the following FHIR Resource Profiles.
 
 - [CareConnect-ProcedureRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1) - An NHS Digital Profile that contains the details of the originating procedure requested, for example a GP Practice.
 
