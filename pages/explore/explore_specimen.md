@@ -24,7 +24,7 @@ How to populate the Specimen instance to conform to the profiles below:
 *Note: Hover over name to see data item name.*
 
 |  **Name** | **Card.** | **Business Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |  |  |  |  |  |  |  |  |  |  |
-| :--- | :--- | :--- | :--- | :--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  - id | 0..1 | Mandatory | [Id](http://hl7.org/fhir/stu3/datatypes.html#id "Id") | Logical id of this artifact<br/><font color="red">Must contain a UUID to identify the instance of a specimen</font> |  |  |  |  |  |  |  |  |  |  |
 |  - meta | 0..1 | Mandatory | [Meta](http://hl7.org/fhir/stu3/resource.html#Meta "Meta") | Metadata about the resource<br/><font color="red">The value attribute of the profile element MUST contain the value 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1'</font> |  |  |  |  |  |  |  |  |  |  |
 |  - extension (fastingStatus) | 0..1 | Required | [Extension-CareConnect-FastingStatus-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-FastingStatus-1 "Extension-CareConnect-FastingStatus-1") | Fasting Status<br/>Constraint (ext-1): Must have either extensions or value[x], not both<br/><font color="red">Details of the fasting status of the patient at time of specimen collection</font> |  |  |  |  |  |  |  |  |  |  |
@@ -61,6 +61,7 @@ How to populate the Specimen instance to conform to the profiles below:
 |   |  | Required | [CareConnect-Practitioner-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1 "CareConnect-Practitioner-1") | <font color="red">This MUST be to the Practitioner resource profiled as CareConnect-Practitioner-1</font> |  |  |  |  |  |  |  |  |  |  |
 |  time | 0..1 | Required | [dateTime](http://hl7.org/fhir/stu3/datatypes.html#datetime "dateTime") | When the annotation was made |  |  |  |  |  |  |  |  |  |  |
 |  text | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | The annotation - text content |  |  |  |  |  |  |  |  |  |  |
+
 ## Specimen Example(s) ##
 
 <script src="https://gist.github.com/IOPS-DEV/0b2c6db045751a7b17e7e03a6fab541e.js"></script>
