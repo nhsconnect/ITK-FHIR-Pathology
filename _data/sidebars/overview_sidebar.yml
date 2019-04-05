@@ -97,6 +97,9 @@ entries:
     - title: Single test Example
       url: /design_singletest_bundle.html
       output: web
+    - title: Single test Example
+      url: /design_renal_bundle.html
+      output: web
     - title: Full Blood Count Example
       url: /design_fbc_bundle.html
       output: web
