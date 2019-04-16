@@ -1,0 +1,159 @@
+entries:
+- title: National Pathology
+  product: National Pathology
+  version: 1.0.0-experimental
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+    - title: Guide Versioning
+      url: /overview_guide_versioning.html
+      output: web
+    - title: Release Notes
+      url: /overview_release_notes.html
+      output: web
+    - title: Glossary
+      url: /overview_glossary.html
+      output: web
+
+  - title: Clinical Scenarios
+    output: web
+    folderitems:
+    - title: Scenario 1
+      url: /engage_scenario1.html
+      output: web
+    - title: Scenario 2
+      url: /engage_scenario2.html
+      output: web
+    - title: Scenario 3
+      url: /engage_scenario3.html
+      output: web
+    - title: Scenario 4
+      url: /engage_scenario4.html
+      output: web
+    - title: Scenario 5
+      url: /engage_scenario5.html
+      output: web
+    
+
+  - title: Messaging Architecture
+    output: web,pdf
+    folderitems:
+    - title: Overview
+      url: /explore.html
+      output: web
+      type: homepage
+    - title: Transport
+      url: /explore_transport.html
+      output: web
+    - title: Message Profiles
+      url: /explore_message_profiles.html
+      output: web
+    # - title: CareConnect FHIR Profiles 
+      # url: /explore_careconnect.html
+      # output: web
+      # subfolders:
+      # - title: Work Flow
+        # url: /workflow.html
+        # output: web
+        # subfolderitems:
+        # - title: Overview
+          # url: /explore_workflow_overview.html
+          # output: web
+
+  - title: Messaging
+    output: web,pdf
+    folderitems:
+    - title: Section Guidance
+      url: /explore.html
+      output: web
+      type: homepage
+    - title: Test Request Summary
+      url: /explore_procedure_request.html
+      output: web
+    - title: Test Report
+      url: /explore_diagnostic_report.html
+      output: web
+    - title: Test Group
+      url: /explore_test_group_observation.html
+      output: web
+    - title: Test Result
+      url: /explore_test_result_observation.html
+      output: web
+ #   - title: Test Report Filing
+ #     url: /explore_test_filing_observation.html
+ #     output: web  
+    - title: Specimen
+      url: /explore_specimen.html
+      output: web
+  - title: Examples
+    output: web
+    folderitems:
+    - title: Single test Example
+      url: /design_singletest_bundle.html
+      output: web
+    - title: Single test Example
+      url: /design_renal_bundle.html
+      output: web
+    - title: Full Blood Count Example
+      url: /design_fbc_bundle.html
+      output: web
+    - title: Full Blood Count and Urine Test
+      url: /design_fbc_urine_bundle.html
+      output: web
+#    - title: Test Data
+#      url: /test_data.html
+#      output: web
+
+  # - title: Assure
+    # output: web
+    # folderitems:
+    # - title: Overview
+      # url: /assure.html
+      # output: web
+#    - title: Access
+#      url: /assure_access.html
+#      output: web
+#    - title: Security
+#      url: /assure_security.html
+#      output: web
+#    - title: End To End
+#      url: /assure_end_to_end.html
+#      output: web
+
+  # - title: Deploy
+    # output: web
+    # folderitems:
+    # - title: Overview
+      # url: /deploy.html
+      # output: web
+#    - title: Access
+#      url: /deploy_access.html
+#      output: web
+#    - title: Security
+#      url: /deploy_security.html
+#      output: web
+
+  - title: Help & Support
+    output: web
+    folderitems:
+    - title: Communication Channels
+      url: /support_communications.html
+      output: web
+      subfolders:
+      - title: Where Else Can I Look
+        output: web
+        subfolderitems:
+        - title: Community
+          url: /support_community.html
+          output: web
+        - title: FHIR Tools
+          url: /support_fhirtools.html
+          output: web
+
+
