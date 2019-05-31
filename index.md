@@ -8,9 +8,7 @@ toc: false
 summary: A brief introduction to getting started with the National Pathology FHIR Messaging Specfication.
 ---
 
-{% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the National Pathology FHIR Messaging Specfication. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
-
-{% include warning.html content="This **temporary** site is provided to document the development of the **alpha** National Pathology FHIR Messaging Specfication and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
+{% include important.html content="These specifications are under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the National Pathology FHIR Messaging Specfication. This project is being developed using an agile approach so iterative updates to content will be added on a regular basis." %}
 
 ## Scope ##
 

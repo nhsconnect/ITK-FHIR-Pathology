@@ -7,9 +7,6 @@ permalink: explore.html
 summary: "Overview of the Messaging Architecture section"
 ---
 
-{% include warning.html content="This **temporary** site is provided to assist with the development of the **Alpha** and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
-
-
 ## Using the message pages ##
 
 Within this message section of the implementation guide, the audience are presented with each business entity that form part of a National Pathology diagnostic test. The business entities are:

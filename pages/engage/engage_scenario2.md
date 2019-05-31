@@ -7,7 +7,7 @@ permalink: engage_scenario2.html
 summary: "Single Test Profile Request, Multiple Test Results"
 ---
 
-{% include warning.html content="This **temporary** site is provided to assist with the development of the **Alpha** Specification and is being updated regularly. It is advised not to develop against these specifications until a formal announcement has been made." %}
+
 
 **Description**
 
