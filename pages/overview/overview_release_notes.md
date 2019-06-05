@@ -16,6 +16,8 @@ Test Report uses additional elements provided by the CareConnect-DiagnosticRepor
 - CareConnect-DiagnosticReport-1.priority - The urgency of the test
 - CareConnect-DiagnosticReport-1.authoredOn - The date and time of the test request
 
+**Additional changes**
+
 - The 'note' element has been updated with new narrative to describe its usage.
 
 - Specimen page has been updated to remove a typo.
