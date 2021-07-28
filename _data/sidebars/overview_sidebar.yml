@@ -54,6 +54,15 @@ entries:
     - title: Message Profiles
       url: /explore_message_profiles.html
       output: web
+    - title: Business Identifiers
+      url: /explore_business_identifiers.html
+      output: web
+    - title: Reporting Values
+      url: /explore_reporting_values.html
+      output: web
+    - title: Related Tests
+      url: /explore_related_tests.html
+      output: web
     # - title: CareConnect FHIR Profiles 
       # url: /explore_careconnect.html
       # output: web
