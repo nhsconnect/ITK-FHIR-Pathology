@@ -9,6 +9,10 @@ summary: Summary release notes of the versions released in FHIR National Patholo
 
 {% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the FHIR National Pathology. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
 
+## 1.2.0-experimental ##
+
+Update to Implementation Guidance in support of clarifications sought during proof of concept implementations.
+
 ## 1.1.0-experimental ##
 
 Test Report uses additional elements provided by the CareConnect-DiagnosticReport-1 profile to support the priority of a test and the date and time a test was requested. 
