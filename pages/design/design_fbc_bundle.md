@@ -12,6 +12,6 @@ The following example contains a Full Blood Count (FBC) test that comprises of s
 <script src="https://gist.github.com/IOPS-DEV/f83e4a2f805af0cea5ea2f91f2f68dca.js"></script>
 
 {% include custom/fhir.codegrid.html
-relfilepath="/Examples/ITK-Pathology-FBC-Bundle-Example-1.xml"
+relfilepath="ITK-Pathology-FBC-Bundle-Example-1.xml"
 title="Full Blood Count Bundle"
 type="xml" %}
