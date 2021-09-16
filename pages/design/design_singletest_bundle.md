@@ -11,3 +11,8 @@ The following example contains a prostate-specific antigen (PSA) test. A single 
 
 
 <script src="https://gist.github.com/IOPS-DEV/688216018e3f80169f94a87d5f6a67a0.js"></script>
+
+{% include custom/fhir.codegrid.html
+relfilepath="NP-Single-Test-Bundle-Example-1.xml"
+title="Single Test Bundle"
+type="xml" %}

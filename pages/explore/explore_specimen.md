@@ -66,3 +66,8 @@ How to populate the Specimen instance to conform to the profiles below:
 ## Specimen Example(s) ##
 
 <script src="https://gist.github.com/IOPS-DEV/0b2c6db045751a7b17e7e03a6fab541e.js"></script>
+
+{% include custom/fhir.codegrid.html
+relfilepath="NP-Specimen-Example-1.xml"
+title="Specimen Example"
+type="xml" %}

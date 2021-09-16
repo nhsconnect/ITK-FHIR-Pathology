@@ -69,3 +69,8 @@ How to populate the Procedure Request instance to conform to the profiles below:
 ## Test Request Summary Example ##
 
 <script src="https://gist.github.com/IOPS-DEV/992fa4b3ac83b375286e75834082602a.js"></script>
+
+{% include custom/fhir.codegrid.html
+relfilepath="NP-Procedure-Request-Example-1.xml"
+title="Procedure Request Example"
+type="xml" %}
