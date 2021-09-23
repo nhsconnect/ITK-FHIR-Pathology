@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- this one is being read -->
 <Bundle xmlns="http://hl7.org/fhir">
 	<id value="13841906-097a-4a47-965a-9508fcc259d5"/>
 	<meta>
