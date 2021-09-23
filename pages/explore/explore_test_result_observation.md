@@ -109,8 +109,6 @@ How to populate the Observation instance to conform to the profiles below:
 
 ## Test (Single) Result Example(s) ##
 
-<script src="https://gist.github.com/IOPS-DEV/bdac374abdb996d0527e9cb44b2a0b33.js"></script>
-
 {% include custom/fhir.codegrid.html
 relfilepath="NP-Observation-Result-Example-1.xml"
 title="Observation Result Example"

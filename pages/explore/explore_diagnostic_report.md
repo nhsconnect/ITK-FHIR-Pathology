@@ -59,8 +59,6 @@ How to populate the Diagnostic Report instance to conform to the profiles below:
 
 Basic example of a Diagnostic Report
 
-<script src="https://gist.github.com/IOPS-DEV/586043065c329e6c62af036bed1b73d5.js"></script>
-
 {% include custom/fhir.codegrid.html
 relfilepath="NP-Diagnostic-Report-Example-1.xml"
 title="Diagnostic Report Example"

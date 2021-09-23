@@ -13,8 +13,6 @@ An additional 24 hour urine protein output test is also included. Both tests are
 
 This example takes elements from Scenario 5.
 
-<script src="https://gist.github.com/IOPS-DEV/9b232a3cb28e8d7bf79b5fb568a97e91.js"></script>
-
 {% include custom/fhir.codegrid.html
 relfilepath="ITK-Pathology-FBC-Urine-Example-1.xml"
 title="Full Blood Count and Urine Bundle"
