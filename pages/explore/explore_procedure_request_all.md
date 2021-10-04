@@ -34,7 +34,7 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - text | 0..1 | Not Used | Narrative | Text summary of the resource, for human interpretation |
 |  - contained | 0..* | Not Used | Resource | Contained, inline Resources |
 |  - modifierExtension | 0..* | Not Used | Extension | Extensions that cannot be ignored<br/>Constraint (ext-1): Must have either extensions or value[x], not both<br/>Slicing: Description: Extensions are always sliced by (at least) url, Discriminator: url, Ordering: false, Rules: Open |
-|  - identifier | 1..1 | Mandatory | Identifier | Identifiers assigned to this order |
+|  - identifier | 0..1 | Required | Identifier | Identifiers assigned to this order |
 |  - - use | 0..1 | Not Used | Code | usual : official : temp : secondary (If known)<br/>Binding (required): Identifies the purpose for this identifier, if known. [IdentifierUse](http://hl7.org/fhir/stu3/valueset-identifier-use.html) |
 |  - - type | 0..1 | Not Used | CodeableConcept | Description of identifier<br/>Binding (extensible): A coded type for an identifier that can be used to determine which identifier to use for a specific purpose. [Identifier Type Codes](http://hl7.org/fhir/stu3/valueset-identifier-type.html) |
 |  - - - coding | 0..* | Not Used | Coding | Code defined by a terminology system |

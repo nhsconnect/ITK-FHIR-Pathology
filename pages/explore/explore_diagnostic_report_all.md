@@ -13,9 +13,9 @@ summary: "National Pathology FHIR Message Profiles"
 
 How to populate the Specimen instance to conform to the profiles below:
 
-|**Level 1**|[DiagnosticReport Resource](http://hl7.org/fhir/stu3/diagnosticreport.html)|**Level 2**|[CareConnect-DiagnosticReport-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1/_history/1.1)|**Level 3**|None|
+|**Level 1**|[DiagnosticReport Resource](http://hl7.org/fhir/stu3/DiagnosticReport.html)|**Level 2**|[CareConnect-DiagnosticReport-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1/_history/1.1)|**Level 3**|None|
 
-|**[View Used FHIR Elements](explore_diagnosticreport.html)**|    |**View All FHIR Elements**|
+|**[View Used FHIR Elements](explore_diagnostic_report.html)**|    |**View All FHIR Elements**|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and Mapping for National Pathology Implementation** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ How to populate the Specimen instance to conform to the profiles below:
 |  - text | 0..1 | Not Used | [Narrative](http://hl7.org/fhir/stu3/narrative.html#Narrative "Narrative") | Text summary of the resource, for human interpretation |
 |  - contained | 0..* | Not Used | [Resource](http://hl7.org/fhir/stu3/resource.html "Resource") | Contained, inline Resources |
 |  - modifierExtension | 0..* | Not Used | [Extension](http://hl7.org/fhir/stu3/extensibility.html#Extension "Extension") | Extensions that cannot be ignored<br/>Constraint (ext-1): Must have either extensions or value[x], not both<br/>Slicing: Description: Extensions are always sliced by (at least) url, Discriminator: url, Ordering: false, Rules: Open |
-|  - identifier | 0..* | Mandatory | [Identifier](http://hl7.org/fhir/stu3/datatypes.html#identifier "Identifier") | Business identifier for report |
+|  - identifier | 0..* | Required | [Identifier](http://hl7.org/fhir/stu3/datatypes.html#identifier "Identifier") | Business identifier for report |
 |  - - use | 0..1 | Not Used | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | usual : official : temp : secondary (If known)<br/> Binding (required): Identifies the purpose for this identifier, if known. [IdentifierUse](http://hl7.org/fhir/stu3/valueset-identifier-use.html) |
 |  - - type | 0..1 | Not Used | [CodeableConcept](http://hl7.org/fhir/stu3/datatypes.html#codeableconcept "CodeableConcept") | Description of identifier<br/> Binding (extensible): A coded type for an identifier that can be used to determine which identifier to use for a specific purpose. [Identifier Type Codes](http://hl7.org/fhir/stu3/valueset-identifier-type.html) |
 |  - - - coding | 0..* | Not Used | [Coding](http://hl7.org/fhir/stu3/datatypes.html#coding "Coding") | Code defined by a terminology system |
@@ -47,12 +47,12 @@ How to populate the Specimen instance to conform to the profiles below:
 |   |  | Required | [CareConnect-ProcedureRequest-1 ](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1  "CareConnect-ProcedureRequest-1 ") | <font color='red'>The value attribute of the profile element MUST contain the value 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedueRequest-1'</font> |
 |  - status | 1..1 | Mandatory | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | registered : partial : preliminary : final +<br/>Binding (required): The status of the diagnostic report as a whole. [Diagnostic-Report-Status]( http://hl7.org/fhir/stu3/valueset-diagnostic-report-status.html ) |
 |  - category | 0..1 | Optional | [CodeableConcept](http://hl7.org/fhir/stu3/datatypes.html#codeableconcept "CodeableConcept") | Service category<br/>Binding (preferred): Codes for diagnostic service sections. [CareConnect-ClinicalDisciplines](https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ClinicalDisciplines-1 )<br/><font color='red'>Clinical Discipline</font> |
-|  - code | 1..1 | Mandatory | [CodeableConcept](http://hl7.org/fhir/stu3/datatypes.html#codeableconcept "CodeableConcept") | Name/Code for this diagnostic report<br/>Binding (preferred): Codes that describe Diagnostic Reports. [Report Codes]( http://hl7.org/fhir/stu3/valueset-report-codes.html )<br/><font color='red'>Test Report Name</font> |
+|  - code | 1..1 | Mandatory | [CodeableConcept](http://hl7.org/fhir/stu3/datatypes.html#codeableconcept "CodeableConcept") | Name/Code for this diagnostic report<br/>Binding (preferred): Codes that describe Diagnostic Reports. [Report Codes]( http://hl7.org/fhir/stu3/valueset-report-codes.html )<br/><font color='red'>Test Report Name<br/>FHIR suppliers SHOULD populate with the SNOMED ConceptID 721981007 for 'Diagnostic studies report'.</font> |
 |  - - coding | 0..* | Not Used | [Coding](http://hl7.org/fhir/stu3/datatypes.html#coding "Coding") | Code defined by a terminology system |
-|  - - - system | 1..1 | Mandatory | [Uri](http://hl7.org/fhir/stu3/datatypes.html#uri "Uri") | Identity of the terminology system |
+|  - - - system | 1..1 | Mandatory | [Uri](http://hl7.org/fhir/stu3/datatypes.html#uri "Uri") | Identity of the terminology system <br/><font color="red">Fixed value="http://snomed.info/sct"</font> |
 |  - - - version | 0..1 | Not Used | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Version of the system - if relevant |
-|  - - - code | 1..1 | Mandatory | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | Symbol in syntax defined by the system |
-|  - - - display | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Representation defined by the system |
+|  - - - code | 1..1 | Mandatory | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | Symbol in syntax defined by the system <br/><font color="red">Fixed value="721981007"</font> |
+|  - - - display | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Representation defined by the system <br/><font color="red">Fixed value="Diagnostic studies report"</font> |
 |  - - - userSelected | 0..1 | Not Used | [Boolean](http://hl7.org/fhir/stu3/datatypes.html#boolean "Boolean") | If this coding was chosen directly by the user |
 |  - - text | 0..1 | Not Used | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Plain text representation of the concept |
 |  - subject | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | The subject of the report - usually, but not always, the patient<br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |

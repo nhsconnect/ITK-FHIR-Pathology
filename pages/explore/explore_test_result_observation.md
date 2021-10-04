@@ -17,16 +17,16 @@ How to populate the Observation instance to conform to the profiles below:
 
 |**Level 1**|[Observation Resource](http://hl7.org/fhir/stu3/observation.html)|**Level 2**|[CareConnect-Observation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_observation_all.html#mapping-for-diagnosticreport)**|
+|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_observation_all.html#mapping-for-DiagnosticReport)**|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | :--- | :--- | :--- | :--- | :--- |
 |  Observation | ​ |  |  | **Measurements and simple assertions<br/>Constraint (dom-2): If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>Constraint (dom-1): If the resource is contained in another resource, it SHALL NOT contain any narrative<br/>Constraint (dom-4): If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>Constraint (dom-3): If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource<br/>Constraint (obs-7): If code is the same as a component code then the value element associated with the code SHALL NOT be present<br/>Constraint (obs-6): dataAbsentReason SHALL only be present if Observation.value[x] is not present** |
-|  - id | 0..1 | Required | Id | Logical id of this artifact<br/><font color="red">Must contain a UUID to identify the instance of a observation</font> |
+|  - id | 0..1 | Required | Id | Logical id of this artifact<br/><font color="red">MUST contain a unique identifier to identify the instance of a observation</font> |
 |  - meta | 0..1 | Mandatory | Meta | Metadata about the resource<br/><font color="red">The value attribute of the profile element MUST contain the value 'https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observtion-1'</font> |
-|  - identifier | 0..* | Mandatory | Identifier | Business Identifier for observation |
-|  - - system | 1..1 | Mandatory | Uri | The namespace for the identifier value<br/><font color="red">MUST contain the value 'https://tools.ietf.org/html/rfc4122'.</font> |
-|  - - value | 1..1 | Mandatory | String | The value that is unique<br/><font color="red">MUST contain a UUID</font> |
+|  - identifier | 0..* | Required | Identifier | Business Identifier for observation |
+|  - - system | 1..1 | Mandatory | Uri | The namespace for the identifier value<br/><font color="red">MUST contain a local identifier naming system</font> |
+|  - - value | 1..1 | Mandatory | String | The value that is unique<br/><font color="red">MUST contain a unique identifier</font> |
 |  - status | 1..1 | Mandatory | Code | registered : preliminary : final : amended +<br/>Binding (required): Codes providing the status of an observation. [ObservationStatus](http://hl7.org/fhir/stu3/valueset-observation-status.html) |
 |  - category | 0..* | Required | CodeableConcept | Classification of type of observation<br/>Binding (preferred): Codes for high level observation categories. [Observation Category Codes](http://hl7.org/fhir/stu3/valueset-observation-category.html)<br/><font color="red">The general type of test result.A default value of Laboratory should be used if a more specific value is not available e.g. pathology, microbiology etc.</font> |
 |  - - coding | 0..* | Required | Coding | Code defined by a terminology system |
