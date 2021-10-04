@@ -5,7 +5,7 @@
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
 	</meta>
 	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<system value="https://example.local.pathology.identifier/Specimen"/>
 		<value value="1b663fc5-9dec-49c0-9eed-18a7cfa5a6b2"/>
 	</identifier>
 	<status value="available"/>

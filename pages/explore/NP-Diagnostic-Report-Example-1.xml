@@ -4,6 +4,10 @@
 	<meta>
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
 	</meta>
+	<identifier>
+		<system value="https://example.local.pathology.identifier/DiagnosticReport"/>
+		<value value="52870765-6e68-4a33-b5a6-4bfeba94a187"/>
+	</identifier>
 	<basedOn>
 		<reference value="urn:uuid:13f35e74-46a9-486c-b2cb-f62ebd840517"/>
 	</basedOn>

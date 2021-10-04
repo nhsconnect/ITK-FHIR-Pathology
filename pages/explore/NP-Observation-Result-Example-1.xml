@@ -5,11 +5,10 @@
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 	</meta>
 	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<system value="https://example.local.pathology.identifier/Observation"/>
 		<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 	</identifier>
 	<status value="final"/>
-<!--No guidance on what category codes can be used. Not a required data item in National Pathology so could leave out-->
 	<category>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -17,7 +16,6 @@
 			<display value="Pathology (qualifier value)"/>
 		</coding>
 	</category>
-<!--Name of result ??? Clarify-->
 	<code>
 		<coding >
 			<system value="http://snomed.info/sct"/>
@@ -29,7 +27,6 @@
 		<reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
 		<display value="KAY, Michael"/>
 	</subject>
-<!--Test performed date/time. Not in EdiFACT examples. Check spec-->
 	<effectiveDateTime value="2017-11-01T15:00:00+00:00"/>
 	<performer>
 		<reference value="urn:uuid:d6407de7-0e86-45eb-93cb-035094aaa49e"/>

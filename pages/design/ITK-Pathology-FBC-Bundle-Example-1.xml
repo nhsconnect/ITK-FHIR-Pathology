@@ -6,7 +6,7 @@
 		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
 	</meta>
 	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<system value="https://example.local.pathology.identifier/PathologyMessage"/>
 		<value value="f36927ef-7703-45ed-b0e5-6ec6723cf0f6"/>
 	</identifier>
 	<type value="message"/>
@@ -33,10 +33,6 @@
 							<display value="For Action"/>
 						</valueCoding>
 					</extension>
-					<!--				<extension url="MessageDefinition">
-					<valueReference>
-					<reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
-				</valueReference>-->
 				</extension>
 				<extension url="SenderReference">
 					<valueString value="None"/>
@@ -171,7 +167,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/ProcedureReport"/>
 					<value value="7e9bbd01-4e52-420d-b05b-48bc671d6708"/>
 				</identifier>
 				<status value="active"/>
@@ -254,7 +250,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Specimen"/>
 					<value value="1b663fc5-9dec-49c0-9eed-18a7cfa5a6b2"/>
 				</identifier>
 				<status value="available"/>
@@ -286,7 +282,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -414,7 +410,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -464,11 +460,10 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
-				<!--No guidance on what category codes can be used. Not a required data item in National Pathology so could leave out-->
 				<category>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -516,7 +511,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -567,7 +562,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -618,7 +613,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -668,7 +663,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -717,7 +712,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>		
@@ -766,7 +761,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -815,7 +810,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -864,7 +859,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -905,7 +900,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -954,7 +949,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -996,7 +991,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -1046,7 +1041,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -1088,7 +1083,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -1137,7 +1132,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -1179,7 +1174,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
@@ -1228,7 +1223,7 @@
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
 				</meta>
 				<identifier>
-					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<system value="https://example.local.pathology.identifier/Observation"/>
 					<value value="2af46949-4938-4c57-bad4-c4363e1965d5"/>
 				</identifier>
 				<status value="final"/>
