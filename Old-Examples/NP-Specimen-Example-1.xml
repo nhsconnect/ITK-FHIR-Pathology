@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen xmlns="http://hl7.org/fhir"/>
-	<id value="40d08761-6cc7-46e1-aa3f-4639cf50b15d"/>
-	<meta>
-		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
-	</meta>
-	<identifier>
-		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="1b663fc5-9dec-49c0-9eed-18a7cfa5a6b2"/>
-	</identifier>
-	<status value="available"/>
-	<type>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="53130003"/>
-			<display value="Venous blood (substance)"/>
-		</coding>
-	</type>
-	<subject>
-		<reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-		<display value="KAY, Michael"/>
-	</subject>
-	<receivedTime value="2017-11-01T15:00:00+00:00"/>
-	<collection>
-		<collectedDateTime value="2017-11-01T11:00:00+00:00"/>
-		<quantity>
-			<value value="11"/>
-			<unit value="ng/mL"/>
-		</quantity>		
-	</collection>
+    <id value="40d08761-6cc7-46e1-aa3f-4639cf50b15d"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://example.local.pathology.identifier/Specimen"/>
+        <value value="1b663fc5-9dec-49c0-9eed-18a7cfa5a6b2"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
+        <display value="KAY, Michael"/>
+    </subject>
+    <receivedTime value="2017-11-01T15:00:00+00:00"/>
+    <collection>
+        <collectedDateTime value="2017-11-01T11:00:00+00:00"/>
+        <quantity>
+            <value value="11"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="ng/mL"/>
+        </quantity>        
+    </collection>
 </Specimen>

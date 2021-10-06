@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport xmlns="http://hl7.org/fhir">
-	<id value="d9df1431-22ac-462a-946a-f195f6c639af"/>
-	<meta>
-		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
-	</meta>
-	<basedOn>
-		<reference value="urn:uuid:13f35e74-46a9-486c-b2cb-f62ebd840517"/>
-	</basedOn>
-	<status value="final"/>
-	<code>
-		<coding >
-			<system value="http://snomed.info/sct"/>
-			<code value="721981007"/>
-			<display value="Diagnostic studies report"/>
-		</coding>
-	</code>
-	<subject>
-		<reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
-		<display value="KAY, Michael"/>
-	</subject>
-	<issued value="2019-03-03T12:00:00+00:00"/>
-	<performer>
-		<actor>
-			<reference value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690"/>
-			<display value="Lingfield Royal Infirmary (Blood Sciences)"/>
-		</actor>
-	</performer>
-	<specimen>
-		<reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
-	</specimen>
-	<result>
-		<reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"/>
-	</result>
+    <id value="d9df1431-22ac-462a-946a-f195f6c639af"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <identifier>
+        <system value="https://example.local.pathology.identifier/DiagnosticReport"/>
+        <value value="52870765-6e68-4a33-b5a6-4bfeba94a187"/>
+    </identifier>
+    <basedOn>
+        <reference value="urn:uuid:13f35e74-46a9-486c-b2cb-f62ebd840517"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding >
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:8d6c2cd5-0eec-496a-88d0-3785a135df09"/>
+        <display value="KAY, Michael"/>
+    </subject>
+    <issued value="2019-03-03T12:00:00+00:00"/>
+    <performer>
+        <actor>
+            <reference value="urn:uuid:aa710162-89f5-48c3-80f0-8c2c70311690"/>
+            <display value="Lingfield Royal Infirmary (Blood Sciences)"/>
+        </actor>
+    </performer>
+    <specimen>
+        <reference value="urn:uuid:756a8361-79ce-4561-afcb-a91fe19df123"/>
+    </specimen>
+    <result>
+        <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+    </result>
 </DiagnosticReport>
