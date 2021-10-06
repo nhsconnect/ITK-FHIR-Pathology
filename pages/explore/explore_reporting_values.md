@@ -19,7 +19,7 @@ Individual test results are reported in the value[x] element of an Observation r
 In FHIR, the value[x] construct allows a choice of datatype to be returned, appropriate to the datatype of the result. It is strongly recommended that implementers are familiar with the FHIR datatype documentation (linked below) to ensure correct representation of results.
 
 | Value types           | FHIR datatype guidance    |
----
+| --- | --- |
 | valueQuantity         | [Quantity](https://hl7.org/fhir/r4/datatypes.html#Quantity)                   |
 | valueCodeableConcept  | [CodeableConcept](https://hl7.org/fhir/r4/datatypes.html#CodeableConcept)     |
 | valueString           | [string](https://hl7.org/fhir/r4/datatypes.html#string)                       |
