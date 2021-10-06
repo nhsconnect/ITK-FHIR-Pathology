@@ -8,6 +8,7 @@ summary: "Business Identifiers used in National Pathology"
 ---
 
 
+
 ## Business Identifiers ##
 
 Resources in National Pathology messages SHOULD be sent with appropriate Business Identifiers.
@@ -34,8 +35,8 @@ Within the Naming System, for each resource, implementers must generate an ident
 Recommendation: Use of properly registered local business identifier naming systems is the current recommended approach
 
 A well-formed local identifier consists of:
-* local naming system, claiming a URI namespace owned by the organisation
-* identifier value, identifying a unique, persistent point within that namespace. An RFC4122 Universally Unique IDentifier (UUID) is a suitable implementation choice.
+	local naming system, claiming a URI namespace owned by the organisation
+	identifier value, identifying a unique, persistent point within that namespace. An RFC4122 Universally Unique IDentifier (UUID) is a suitable implementation choice.
 
 The identifier will appear as e.g.:
 ```

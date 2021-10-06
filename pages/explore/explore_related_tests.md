@@ -11,32 +11,28 @@ summary: "Related Tests in National Pathology"
 
 Related tests in National Pathology messages.
 
-### Reporting different types of test result ###
+The .related element within the Observation resource allows cross-referencing of individual test results within a National Pathology message payload.
 
-Individual test results are reported in the value[x] element of an Observation resource. 
-In FHIR, the value[x] construct allows a choice of datatype to be returned, appropriate to the datatype of the result.
+The type of cross-reference is described using the required HL7 codesystem [codesystem-observation-relationshiptypes](http://hl7.org/fhir/stu3/codesystem-observation-relationshiptypes.html).
 
-| Value types           | FHIR datatype guidance    |
----
-| valueQuantity         | [Quantity](https://hl7.org/fhir/r4/datatypes.html#Quantity)                   |
-| valueCodeableConcept  | [CodeableConcept](https://hl7.org/fhir/r4/datatypes.html#CodeableConcept)     |
-| valueString           | [string](https://hl7.org/fhir/r4/datatypes.html#string)                       |
-| valueBoolean          | [boolean](https://hl7.org/fhir/r4/datatypes.html#boolean)                     |
-| valueInteger          | [integer](https://hl7.org/fhir/r4/datatypes.html#integer)                     |
-| valueRange            | [Range](https://hl7.org/fhir/r4/datatypes.html#Range)                         |
-| valueRatio            | [Ratio](https://hl7.org/fhir/r4/datatypes.html#Ratio)                         |
-| valueSampledData      | [SampledData](https://hl7.org/fhir/r4/datatypes.html#SampledData)             |
-| valueTime             | [time](https://hl7.org/fhir/r4/datatypes.html#time)                           |
-| valueDateTime         | [dateTime](https://hl7.org/fhir/r4/datatypes.html#dateTime)                   |
-| valuePeriod           | [Period](https://hl7.org/fhir/r4/datatypes.html#Period)                       |
+This codesystem has possible values: has-member \| derived-from \| sequel-to \| replaces \| qualified-by \| interfered-by
 
-### Reporting coded values using Read Codes ###
+Thus:
+```
+<related>
+    <type value="has-member" />
+    <target>
+        <reference value="urn:uuid:dacb177a-9501-4dcc-8b22-b941791ae0db"/>
+    </target>
+</related>
+```
+
+Examples within this document with test panel payloads illustrate usage of the 'has-member' relation
 
 
+### Related types ###
+* has-member is used for test batteries, panels or sets of measurements. For example, a FBC (full blood count) would have members capturing Red blood cell count, Total white cell count, Mean corpuscular haemoglobin concentration, etc.
 
+* derived-from is used to reference observations or measurements that allow the determination of another i.e. from which this observation value is derived. These might be inputs to a calculation or simply supporting evidence. For example constituent observations contributing to a NEWS2 or APGAR score.
 
-### Reporting qualified reference ranges ###
-
-
-
-
+Other related observation types are defined as per the HL7 codesystem [codesystem-observation-relationshiptypes](http://hl7.org/fhir/stu3/codesystem-observation-relationshiptypes.html).

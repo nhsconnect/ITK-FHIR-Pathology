@@ -11,7 +11,39 @@ summary: Summary release notes of the versions released in FHIR National Patholo
 
 ## 1.2.0-experimental ##
 
+
 Update to Implementation Guidance in support of clarifications sought during proof of concept implementations.
+
+### Status updated to Beta
+
+- Implementation Guidance Maturity Level updated from Experimental to Beta.  The change reflects the increased maturity of the Implementation Guidance following the recent Proof of Concept testing and also use of the STU3 Pathology profiles as part of the National Integration EDIFACT/FHIR Adaptor.
+
+### Default Value for DiagnosticReport.code = 721981007
+
+ - guidance added on DiagnosticReport mapping page.
+
+
+
+**Added pages for guidance on:**
+
+#### Business Identifiers
+
+- Guidance added regarding use of identifiers within National Pathology messaging payloads. Examples updates to align with guidance.
+
+#### Reporting Values
+
+- Guidance added on Observation.value[x] choice of datatype.
+- Guidance added on units and [UCUM](http://unitsofmeasure.org).
+- Guidance added on use of Extension-CareConnect-ValueApproximation-1 to mark approximations.
+- Guidance added on qualified reference ranges (<x, >x).
+        
+#### Related Tests
+
+- Guidance on use of Observation.related.type to record Observation cross-referencing.
+
+### Specimen resource data mapping
+
+- clarified and corrected some mapping issues to align with the CareConnect-Specimen-1 profile.
 
 ## 1.1.0-experimental ##
 
