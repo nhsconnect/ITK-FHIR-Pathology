@@ -20,6 +20,8 @@ How to populate the Procedure Request instance to conform to the profiles below:
 
 |**Level 1**|[Procedure Request Resource](http://hl7.org/fhir/stu3/procedurerequest.html)|**Level 2**|[CareConnect-ProcedureRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)|**Level 3**|None|
 
+|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_procedure_request_all.html)**|
+
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | --- | --- | --- | --- | --- |
 |  ProcedureRequest | ​ |  |  | **A request for a procedure or diagnostic to be performed<br/>Constraint (dom-2): If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>Constraint (dom-1): If the resource is contained in another resource, it SHALL NOT contain any narrative<br/>Constraint (dom-4): If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>Constraint (dom-3): If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource** |

@@ -19,7 +19,7 @@ How to populate the Observation instance to conform to the profiles below:
 
 |**Level 1**|[Observation Resource](http://hl7.org/fhir/stu3/observation.html)|**Level 2**|[CareConnect-Observation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_observation_all.html#mapping-for-DiagnosticReport)**|
+|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_test_group_observation_all.html)**|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | :--- | :--- | :--- | :--- | :--- |
