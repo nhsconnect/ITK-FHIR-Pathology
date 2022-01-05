@@ -17,7 +17,6 @@ How to populate the Diagnostic Report instance to conform to the profiles below:
 
 |**Level 1**|[DiagnosticReport Resource](http://hl7.org/fhir/stu3/DiagnosticReport.html)|**Level 2**|[CareConnect-DiagnosticReport-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_diagnostic_report_all.html)**|
 
 |  **Name** | **Card.** | **Business Conformance** | **Type** | **Description, Constraints and Mapping for National Pathology Implementation** |  |  |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | --- | --- | --- | --- | --- | --- | --- |
@@ -54,6 +53,13 @@ How to populate the Diagnostic Report instance to conform to the profiles below:
 |  - - - system | 1..1 | Mandatory | [Uri](http://hl7.org/fhir/stu3/datatypes.html#uri "Uri") | Identity of the terminology system<br/><br/>Fixed Value: http://snomed.info/sct |  |  |  |  |  |  |  |
 |  - - - code | 1..1 | Mandatory | [Code](http://hl7.org/fhir/stu3/datatypes.html#code "Code") | Symbol in syntax defined by the system |  |  |  |  |  |  |  |
 |  - - - display | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | Representation defined by the system |  |  |  |  |  |  |  |
+
+
+Mandatory elements **MUST** be returned in National Pathology messages.
+Required elements **SHOULD** be returned in National Pathology messages if the data is available.
+Optional elements **MAY** be returned in National Pathology messages if the data is available
+
+Elements in the base FHIR resource that are not listed **SHOULD NOT** be used in National Pathology messages.
 
 ## Examples ##
 

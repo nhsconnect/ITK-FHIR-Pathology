@@ -19,7 +19,6 @@ How to populate the Specimen instance to conform to the profiles below:
 
 |**Level 1**|[Specimen Resource](http://hl7.org/fhir/stu3/specimen.html)|**Level 2**|[CareConnect-Specimen-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_specimen_all.html#mapping-for-patient)**|
 
 *Note: Hover over name to see data item name.*
 
@@ -58,6 +57,13 @@ How to populate the Specimen instance to conform to the profiles below:
 |  - - reference | 0..1 | Required | String | Literal reference, Relative, internal or absolute URL<br/><br/><font color="red">A reference to the practitioner resource included in the FHIR message bundle.</font>
 |  - - time | 0..1 | Required | [dateTime](http://hl7.org/fhir/stu3/datatypes.html#datetime "dateTime") | When the annotation was made | 
 |  - - text | 1..1 | Mandatory | [String](http://hl7.org/fhir/stu3/datatypes.html#string "String") | The annotation - text content | 
+
+
+Mandatory elements **MUST** be returned in National Pathology messages.
+Required elements **SHOULD** be returned in National Pathology messages if the data is available.
+Optional elements **MAY** be returned in National Pathology messages if the data is available
+
+Elements in the base FHIR resource that are not listed **SHOULD NOT** be used in National Pathology messages.
 
 ## Specimen Example(s) ##
 

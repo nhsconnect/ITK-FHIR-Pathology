@@ -19,7 +19,6 @@ How to populate the Observation instance to conform to the profiles below:
 
 |**Level 1**|[Observation Resource](http://hl7.org/fhir/stu3/observation.html)|**Level 2**|[CareConnect-Observation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_test_group_observation_all.html)**|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | :--- | :--- | :--- | :--- | :--- |
@@ -54,3 +53,10 @@ How to populate the Observation instance to conform to the profiles below:
 |  - - target | 1..1 | Mandatory | [Reference](http://hl7.org/fhir/stu3/references.html "Reference") | Resource that is related to this one<br/><br/>logical identifier (.id element) of the panel item Observation resource<br/>This is expected to be a reference to another Observation reference within the Pathology message payload bundle<br/><br/>Constraint (ref-1): SHALL have a contained resource if a local reference is provided |
 |   |  | Mandatory | [CareConnect-Observation-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1 "CareConnect-Observation-1") |  |
 |  - - - reference | 0..1 | Mandatory | String | Literal reference, Relative, internal or absolute URL<br/><br/><font color="red">a reference to the Observtionresource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font><br/><br/> |
+
+
+Mandatory elements **MUST** be returned in National Pathology messages.
+Required elements **SHOULD** be returned in National Pathology messages if the data is available.
+Optional elements **MAY** be returned in National Pathology messages if the data is available
+
+Elements in the base FHIR resource that are not listed **SHOULD NOT** be used in National Pathology messages.

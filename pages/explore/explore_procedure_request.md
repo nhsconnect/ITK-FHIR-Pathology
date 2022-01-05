@@ -20,7 +20,6 @@ How to populate the Procedure Request instance to conform to the profiles below:
 
 |**Level 1**|[Procedure Request Resource](http://hl7.org/fhir/stu3/procedurerequest.html)|**Level 2**|[CareConnect-ProcedureRequest-1](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1)|**Level 3**|None|
 
-|**View Used FHIR Elements**|    |**[View All FHIR Elements](explore_procedure_request_all.html)**|
 
 |  **Name** | **Card.** | **Conformance** | **Type** | **Description, Constraints and mapping for National Pathology Implementation** |
 | --- | --- | --- | --- | --- |
@@ -67,6 +66,13 @@ How to populate the Procedure Request instance to conform to the profiles below:
 |  - - reference | 0..1 | Required | String | Literal reference, Relative, internal or absolute URL <font color="red">a reference to the Patient resource instance in the message in the format of a UUID prefixed with 'urn:uuid:'.</font> |
 |- note	|0..*|	Required	|Annotation	|Comments <font color="red">Notes relating to the test request, as provided by the requester. May be used to provide further clinical context and/or the reason for requesting the tests.</font> |
 |- - text|	1..1	|Required|	String	|The annotation - text content <font color="red">E.G. Patient always feels tired</font>|
+
+
+Mandatory elements **MUST** be returned in National Pathology messages.
+Required elements **SHOULD** be returned in National Pathology messages if the data is available.
+Optional elements **MAY** be returned in National Pathology messages if the data is available
+
+Elements in the base FHIR resource that are not listed **SHOULD NOT** be used in National Pathology messages.
 
 ## Test Request Summary Example ##
 
